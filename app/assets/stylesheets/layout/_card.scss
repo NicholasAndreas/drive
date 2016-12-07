@@ -4,8 +4,8 @@
   background-size: cover !important;
   color: white;
   position: relative;
-  border-radius: 3px;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
   background-color: blue;
 }
 .card-user {
@@ -52,9 +52,16 @@
   background-size: cover !important;
   color: white;
   position: relative;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-bottom: 20px;
   background-color: blue;
+  .link-artist {
+  font-size: 25px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+
+  }
 }
 .card-gallery {
   height: 200px;
