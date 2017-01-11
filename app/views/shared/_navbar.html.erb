@@ -1,16 +1,14 @@
 <div class="navbar-wagon">
+
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+    <%= image_tag "transport.png" %>
   <% end %>
+
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-    <!-- Home Button -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <i class="fa fa-home fa-2x"></i>
-  <% end %>
 
     <!-- Different navigation if login or not -->
     <% if user_signed_in? %>
@@ -76,32 +74,26 @@
     <div class="navbar-wagon-item">
       <div class="dropdown">
 
-          <a href="" class="navbar-wagon-item navbar-wagon-button btn dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">Sign in</a>
+          <a href="" class="navbar-wagon-item navbar-wagon-button btn dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">SIGN IN</a>
          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
            <li><%= link_to t(".sign_in", default: "Sign in User"), new_user_session_path%></li>
 
 
 
-           <li><%= link_to t(".sign_in", default: "Sign in Artist"), new_artist_session_path%></li>
+           <li><%= link_to t(".sign_in", default: "Sign in Driving Instructor"), new_artist_session_path%></li>
             </ul>
 
        </div>
       </div>
 
        <div class="navbar-wagon-item">
-         <div class="dropdown">
 
-          <a href="" class="navbar-wagon-item navbar-wagon-button btn dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">Sign up</a>
-         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <a href="" class="navbar-wagon-item navbar-wagon-button btn" id="navbar-wagon-menu">BLOG</a>
+          <a href="" class="navbar-wagon-item navbar-wagon-button btn" id="navbar-wagon-menu">BECOME A DRIVER</a>
+          <a href="" class="navbar-wagon-item navbar-wagon-button btn" id="navbar-wagon-menu">HELP</a>
 
-           <li><%= link_to t(".top_call_to_action", default: "Sign up User"), new_user_registration_path%></li>
-
-
-           <li><%= link_to t(".top_call_to_action", default: "Sign up Artist"), new_artist_registration_path%></li>
-            </ul>
           <% end %>
-          </div>
         </div>
     <!-- Button (call-to-action) -->
 
