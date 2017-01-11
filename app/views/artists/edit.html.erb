@@ -1,10 +1,15 @@
+<div id="wrapper" class="padded">
+  <div class="container">
+    <div class="row">
+      <div class="home_title col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="text-center">
+
 <%= simple_form_for (@artist) do |f|%>
 
  <%= f.input :first_name %>
   <%= f.input :last_name %>
   <%= f.input :bio %>
   <%= f.input :address %>
-  <%= f.input :encrypted_password %>
 
 
 <%= f.input :picture, as: :attachinary %>
@@ -12,3 +17,8 @@
 <%= f.input :photos, as: :attachinary %>
  <%= f.button :submit, class: "btn btn-primary"  %>
 <% end %>
+</div>
+</div>
+</div>
+</div>
+</div>
